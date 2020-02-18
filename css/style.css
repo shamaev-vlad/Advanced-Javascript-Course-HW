@@ -35,6 +35,8 @@ body {
   margin-right: 20px;
   cursor: pointer;
   font-size: 15px;
+  outline: none;
+  transition: 0.3s;
 }
 
 .btn-cart:hover {
@@ -71,6 +73,8 @@ body {
   background-color: #fdff6e;
   height: 30px;
   width: 140px;
+  outline: none;
+  transition: 0.3s;
 }
 
 .by-btn:hover {
