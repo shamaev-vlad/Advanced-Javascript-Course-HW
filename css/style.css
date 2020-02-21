@@ -22,7 +22,7 @@ body {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 40px;
 }
 
@@ -80,4 +80,29 @@ body {
 .by-btn:hover {
   background-color: #ffe000;
   color: #ff0000;
+}
+
+.goods-list {
+  display: none;
+  position: absolute;
+  top: 90px;
+  right: 70px;
+}
+
+#goods-list-section__modal {
+  background-color: #fff;
+  border: 1px solid black;
+  width: 200px;
+}
+
+#goods-list-section__delete {
+  margin: 5px 0 0 5px;
+}
+
+#goods-list_head-line {
+  margin-left: 25px;
+}
+
+#goods-list__total {
+  margin-left: 25px;
 }

@@ -9,12 +9,20 @@
 <header>
   <div class="header__top center">
     <div class="header__logo">LOGO</div>
-    <button class="btn-cart" type="button">Корзина</button>
+    <button class="btn-cart" type="button" id="basket-btn">Корзина</button>
     </div>
 </header>
 <main>
     <div class="products center"></div>
 </main>
+<div id="goods-list-section" class="goods-list">
+    <div id="goods-list-section__modal">
+        <input type="submit" value="X" id="goods-list-section__delete">
+        <h3 id="goods-list_head-line">Корзина</h3>
+        <div id="goods-list__product-box"></div>
+        <p id="goods-list__total"></p>
+    </div>
+</div>
 <script src="./js/main.js"></script>
 </body>
 </html>
