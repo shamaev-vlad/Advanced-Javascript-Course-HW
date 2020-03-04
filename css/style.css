@@ -56,6 +56,7 @@ body {
 
 .cart {
   position: relative;
+  display: flex;
 }
 .cart-block {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.62);
@@ -65,9 +66,21 @@ body {
   top: 130%;
   position: absolute;
   background-color: white;
-  padding: 20px;
+  padding: 15px;
   color: black;
-  width: 365px;
+  width: 100%;
+}
+
+.product-desc {
+  margin-left: 5px;
+}
+
+.product-bio {
+  display: flex;
+}
+
+.right-block {
+  text-align: right;
 }
 
 .cart-block:before {
@@ -119,8 +132,8 @@ body {
 .product-cart-item {
   display: flex;
   align-items: center;
+  margin: 5px;
   border: 1px solid #000;
-  background-color: #fff;
 }
 
 .desc {
@@ -152,4 +165,18 @@ body {
 .by-btn:hover {
   background-color: #ffe000;
   color: #ff0000;
+}
+
+.error {
+  margin: 200px auto;
+  width: 415px;
+  background-color: #fff;
+  height: 100px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+}
+
+.error-alert {
+  margin: auto;
 }

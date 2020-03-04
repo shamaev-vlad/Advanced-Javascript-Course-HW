@@ -12,39 +12,22 @@
   <div class="header__top center">
     <div class="header__logo">интернет-магазин</div>
       <div class="cart">
-      <form action="#" class="search-form">
-          <input type="text" class="search-field" v-model="searchLine">
-          <button class="btn-search" type="submit" @click="FilterGoods">
-              <i class="fas fa-search"></i>
-          </button>
-      </form>
-          <button class="btn-cart" type="button" @click="isVisible = !isVisible">Корзина</button>
-          <div class="cart-block" :class="divClasses">
-              <div class="product-cart-item ">
-                  <img :src="imgCatalogSmall" alt="Some img">
-                  <div class="desc">
-                      <h3 class="product-name">Название</h3>
-                      <p class="product-price">Цена</p>
-                  </div>
-                      <button class="by-btn" @click="">Купить</button>
-              </div>
-      </div>
+      <search ref="search"></search>
+          <cart ref="cart"></cart>
     </div>
 </header>
 <main>
-    <div class="products center">
-        <div class="product-item" v-for="product of filteredGoods" :key="product.id_product">
-            <img class="product-img" :src="imgCatalog" alt="Some img">
-                <h3 class="product-name">{{product.product_name}}</h3>
-                <p class="product-price">{{product.price}}₽</p>
-                <button class="by-btn" @click="addProduct(product)">Добавить в корзину</button>
-        </div>
-    </div>
+    <error ref="error"></error>
+    <products ref="products"></products>
 </main>
 </div>
 
 <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/CartComp.js"></script>
+<script src="js/ErrorComp.js"></script>
+<script src="js/ProducComp.js"></script>
+<script src="js/SearchComp.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
