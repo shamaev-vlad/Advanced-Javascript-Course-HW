@@ -21,7 +21,7 @@ Vue.component('products', {
         }
     },
     mounted(){
-        this.$parent.getJson(`${API + this.catalogUrl}`)
+        this.$parent.getJson('/api/products')
             .then(data => {
                 for(let el of data){
                     this.products.push(el);
@@ -37,7 +37,7 @@ Vue.component('products', {
         //     })
     },
     template: `
-        <div class="products">
+        <div class="products center">
             <product v-for="item of filtered" :key="item.id_product" :img="imgCatalog" :product="item"></product>
         </div>
     `
@@ -55,7 +55,7 @@ Vue.component('product', {
       };
     },
 
-    template: ` <div class="products center">
+    template: ` <div class="product">
         <div class="product-item">
             <img class="product-img" :src="img" alt="Some img">
                 <h3 class="product-name">{{product.product_name}}</h3>

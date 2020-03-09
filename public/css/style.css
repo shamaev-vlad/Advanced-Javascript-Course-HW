@@ -20,7 +20,8 @@ body {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 40px;
 }
 
@@ -127,6 +128,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .product-cart-item {
